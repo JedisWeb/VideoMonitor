@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">监控系统</string>
+    <string name="plate_numbers">车牌号</string>
+    <string name="name">名称</string>
+    <string name="message">信息</string>
+    <string name="time">时间</string>
+</resources>

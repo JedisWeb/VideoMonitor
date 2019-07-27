@@ -1,0 +1,29 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <HorizontalScrollView
+        android:id="@+id/table_horsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_background"
+            android:orientation="vertical"
+            android:paddingLeft="1dp"
+            android:paddingTop="1dp">
+
+            <include layout="@layout/table_title_layout" />
+
+        </TableLayout>
+    </HorizontalScrollView>
+</ScrollView>

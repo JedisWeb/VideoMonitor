@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/deviceName_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/deviceName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="设备名称"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <TextView
+            android:id="@+id/deviceName_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Jedis"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+    android:id="@+id/storage_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/storage_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:text="存储"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/storage_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/more"
+            android:layout_alignParentRight="true"
+            />
+
+</LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:id="@+id/camera_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/camera_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:text="镜头"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:id="@+id/camera_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/more"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:id="@+id/horizontal_screen_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/horizontal_screen_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:text="横屏"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/horizontal_screen_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_checked="false"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+</LinearLayout>
